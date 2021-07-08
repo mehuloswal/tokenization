@@ -1,6 +1,8 @@
 # Asset Tokenization - ERC20 Standard
 
-**Check out the project** [**here**](https://momosugarstokens.netlify.app/). ![Active Project Image](https://github.com/mehuloswal/tokenization/blob/main/client/WebsiteSS.PNG?raw=true)
+👉 **Check out the project** [**here**](https://momosugarstokens.netlify.app/).
+
+![Active Project Image](https://github.com/mehuloswal/tokenization/blob/main/client/WebsiteSS.PNG?raw=true)
 
 ## Real-World Use-Case for this Project
 
