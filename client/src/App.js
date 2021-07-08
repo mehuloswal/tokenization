@@ -9,7 +9,7 @@ import "./App.css";
 class App extends Component {
   state = {
     loaded: false,
-    kycAddress: "0x123",
+    kycAddress: "",
     tokenSaleAddress: "",
     userTokens: 0,
   };
@@ -94,27 +94,40 @@ class App extends Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
-      <div className="App">
-        <h1>MOMO Sugars Token Sale</h1>
-        <p>Get your tokens today!</p>
-        <h2>KYC whitelisting</h2>
-        Address to allow:{" "}
-        <input
-          type="text"
-          name="kycAddress"
-          value={this.state.kycAddress}
-          onChange={this.handleOnChange}
-          placeholder="0x123..."
-        />
-        <button type="button" onClick={this.handleKycWhitelisting}>
-          Add to whitelist
-        </button>
-        <h2>Buy Sugar-Tokens</h2>
-        <p>Send Ether to this address: {this.state.tokenSaleAddress}</p>
-        <p>You have: {this.state.userTokens} MOMO Tokens</p>
-        <button type="button" onClick={this.handleBuyToken}>
-          Buy more tokens
-        </button>
+      <div className="card">
+        <div className="box">
+          <div className="content">
+            <h1>MOMO Sugars Token Sale</h1>
+            <h4>Get your tokens today!</h4>
+            <h2 className="kyc-text">KYC whitelisting</h2>
+            <span className="address-to-allow"> Address to allow: </span>
+            <input
+              type="text"
+              name="kycAddress"
+              value={this.state.kycAddress}
+              onChange={this.handleOnChange}
+              placeholder="0x123..."
+            />
+            <button
+              type="button"
+              onClick={this.handleKycWhitelisting}
+              className="whitelist"
+            >
+              Add to whitelist
+            </button>
+            <h2>Buy Sugar-Tokens</h2>
+            <span>Send Ether to this address:</span>{" "}
+            <span className="address">{this.state.tokenSaleAddress}</span>
+            <p>
+              You have:{" "}
+              <span className="token-number">{this.state.userTokens} MOMO</span>{" "}
+              Tokens
+            </p>
+            <button type="button" onClick={this.handleBuyToken}>
+              Buy more tokens
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

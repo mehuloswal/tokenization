@@ -1,22 +1,75 @@
-.App {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* background-color: #42adfa; */
+  /* background-color: #ebf5fc; */
+  background-color: #e0edf7;
+  overflow: auto;
+}
+.card {
+  position: relative;
+  min-width: 500px;
+  height: 500px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  border-radius: 15px;
+  /* background-color: #e0edf7; */
+  background-color: white;
+}
+.box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+}
+.content {
+  padding: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
+h1 {
+  color: rgb(66, 103, 133);
+}
+h4 {
+  color: rgb(66, 103, 133);
+  margin-bottom: 20px;
+}
+h2 {
+  color: rgb(48, 77, 99);
+  margin-bottom: 5px;
+}
+.address-to-allow {
+  font-weight: 600;
+  color: rgb(27, 42, 54);
+}
+input {
+  border-radius: 6px;
+  border: 1px solid rgb(48, 77, 99);
+  background-color: #ebf5fc;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 6px 55px;
+  background-color: #7992a3;
+  border: none;
+  color: #ebf5fc;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #8ca9c0;
+  color: rgb(27, 42, 54);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.address {
+  font-weight: 650;
 }
-
-.App-link {
-  color: #09d3ac;
+p {
+  margin-top: 14px;
+}
+.token-number {
+  font-weight: 600;
+  color: rgb(27, 42, 54);
 }

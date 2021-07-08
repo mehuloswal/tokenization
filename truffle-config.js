@@ -1,7 +1,7 @@
 const path = require("path");
 require("dotenv").config({ path: "./.env" });
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const MetaMaskAccountIndex = 1;
+const MetaMaskAccountIndex = 0;
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -24,7 +24,7 @@ module.exports = {
       network_id: "5777",
     },
     goerli_infura: {
-      provider: () => {
+      provider: function () {
         return new HDWalletProvider(
           process.env.MNEMONIC,
           "https://goerli.infura.io/v3/3d2f0b8d964a447b8f26931139c71968",
@@ -34,7 +34,7 @@ module.exports = {
       network_id: 5,
     },
     ropsten_infura: {
-      provider: () => {
+      provider: function () {
         return new HDWalletProvider(
           process.env.MNEMONIC,
           "https://ropsten.infura.io/v3/3d2f0b8d964a447b8f26931139c71968",
