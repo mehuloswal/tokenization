@@ -31,5 +31,7 @@
 # Deployment
 
 > Frontend Deployment done using **Netlify**
+> 
 > Token deployed onto test-network, **Görli and Ropsten**
+> 
 > Used a hosted node on Test-Network "**Infura**"
